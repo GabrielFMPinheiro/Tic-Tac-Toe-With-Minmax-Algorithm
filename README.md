@@ -26,8 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-project-ggo5usLPS](https://www.frontendmentor.io/solutions/order-summary-project-ggo5usLPS)
-- Live Site URL: [https://gabrielfmpinheiro.github.io/order-summary-component/](https://gabrielfmpinheiro.github.io/order-summary-component/)
+- Live Site URL: [https://gabrielfmpinheiro.github.io/Tic-Tac-Toe-With-Minmax-Algorithm/](https://gabrielfmpinheiro.github.io/Tic-Tac-Toe-With-Minmax-Algorithm/)
 
 ## My process
 
