@@ -166,7 +166,7 @@ class Board extends binder(React.Component) {
 
   game(board) {
     return (
-      <div className="board-container">
+      <main className="board-container">
         <div className="column-1" />
         <div className="column-2" />
         <div className="row-1" />
@@ -182,13 +182,13 @@ class Board extends binder(React.Component) {
             />
           );
         })}
-      </div>
+      </main>
     );
   }
 
   initialScreen() {
     return (
-      <div className="btn-container">
+      <section className="btn-container">
         <h3>First Player</h3>
         <div>
           <Button
@@ -234,7 +234,7 @@ class Board extends binder(React.Component) {
           value={'START'}
           name={'start-btn'}
         />
-      </div>
+      </section>
     );
   }
 
@@ -254,10 +254,10 @@ class Board extends binder(React.Component) {
       return <>{this.initialScreen()}</>;
     } else if (winner !== null) {
       return (
-        <>
+        <section>
           <h1 className="result-title">{this.finalGame(winner)}</h1>
           <Button event={this.resetGame} value={'RESTART'} name={'reset-btn'} />
-        </>
+        </section>
       );
     } else {
       return <>{this.game(board)}</>;
