@@ -161,10 +161,7 @@ class Board extends binder(React.Component) {
       element.classList.remove('active');
     }
     target.classList.toggle('active');
-    this.setState({ player: target.innerHTML === 'X' ? 1 : 2 }, () => {
-      if (this.state.player === 1 && this.state.isComputerPlaying)
-        this.bestMove();
-    });
+    this.setState({ player: target.innerHTML === 'X' ? 1 : 2 });
   }
 
   game(board) {
@@ -181,6 +178,7 @@ class Board extends binder(React.Component) {
               id={index}
               key={index}
               eventHandler={this.eventHandler}
+              data-testid={index}
             />
           );
         })}
@@ -226,7 +224,13 @@ class Board extends binder(React.Component) {
           />
         </div>
         <Button
-          event={() => this.setState({ viewInitialScreen: false })}
+          event={() =>
+            this.setState({ viewInitialScreen: false }, () => {
+              if (this.state.player === 1 && this.state.isComputerPlaying) {
+                this.bestMove();
+              }
+            })
+          }
           value={'START'}
           name={'start-btn'}
         />

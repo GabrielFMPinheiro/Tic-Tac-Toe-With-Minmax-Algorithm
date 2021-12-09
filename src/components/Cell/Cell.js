@@ -21,12 +21,18 @@ class Cell extends React.Component {
     const { id, eventHandler } = this.props;
 
     return (
-      <div className="cell-container" id={id} onClick={eventHandler}>
+      <div
+        className="cell-container"
+        id={id}
+        onClick={eventHandler}
+        data-testid="cell-container"
+      >
         <img
           src={this.chooseImg()}
           alt=""
           className="player-img"
           style={{ display: this.chooseImg() !== 'none' ? 'initial' : 'none' }}
+          data-testid={id}
         />
       </div>
     );
