@@ -1,0 +1,98 @@
+.board-container {
+  width: 620px;
+  height: auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.row-1,
+.row-2 {
+  content: '';
+  width: 620px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+}
+
+.row-1 {
+  top: calc(33%);
+}
+
+.row-2 {
+  top: calc(66%);
+}
+
+.column-1,
+.column-2 {
+  content: '';
+  width: 10px;
+  height: 620px;
+  background-color: white;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.column-1 {
+  left: calc(32%);
+}
+
+.column-2 {
+  left: calc(64%);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(40, 40, 43, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-container h3 {
+  margin: 15px 0;
+}
+
+.result-title {
+  margin: 50px 0;
+  font-size: 60px;
+}
+
+.active {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .board-container {
+    width: 320px;
+    height: 320px;
+  }
+
+  .column-1,
+  .column-2 {
+    height: 320px;
+  }
+
+  .row-1,
+  .row-2 {
+    width: 320px;
+  }
+
+  .btn-container {
+    padding: 40px;
+    font-size: 12px;
+  }
+
+  .result-title {
+    font-size: 40px;
+  }
+}

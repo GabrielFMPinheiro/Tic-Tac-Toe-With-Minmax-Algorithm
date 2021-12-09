@@ -1,0 +1,14 @@
+.title {
+  color: white;
+  margin-bottom: 100px;
+  background-color: rgb(40, 40, 43);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    padding: 20px;
+    font-size: 16px;
+  }
+}

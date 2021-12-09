@@ -1,0 +1,27 @@
+.cell-container {
+  content: '';
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.player-img {
+  width: 150px;
+  height: 150px;
+  border: none;
+}
+
+@media screen and (max-width: 700px) {
+  .cell-container {
+    width: 105px;
+    height: 105px;
+  }
+
+  .player-img {
+    width: 50px;
+    height: 50px;
+  }
+}
