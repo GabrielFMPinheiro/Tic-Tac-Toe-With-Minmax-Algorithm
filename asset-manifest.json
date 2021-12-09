@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/css/main.9fd37a0c.chunk.css",
+    "main.js": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/js/main.ee9fb52e.chunk.js",
+    "main.js.map": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/js/main.ee9fb52e.chunk.js.map",
+    "runtime-main.js": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/js/runtime-main.ea379e52.js",
+    "runtime-main.js.map": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/js/runtime-main.ea379e52.js.map",
+    "static/js/2.29e45c5d.chunk.js": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/js/2.29e45c5d.chunk.js",
+    "static/js/2.29e45c5d.chunk.js.map": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/js/2.29e45c5d.chunk.js.map",
+    "index.html": "/Tic-Tac-Toe-With-Minmax-Algorithm/index.html",
+    "static/css/main.9fd37a0c.chunk.css.map": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/css/main.9fd37a0c.chunk.css.map",
+    "static/js/2.29e45c5d.chunk.js.LICENSE.txt": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/js/2.29e45c5d.chunk.js.LICENSE.txt",
+    "static/media/o.50ad6647.png": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/media/o.50ad6647.png",
+    "static/media/x.4a603df1.png": "/Tic-Tac-Toe-With-Minmax-Algorithm/static/media/x.4a603df1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ea379e52.js",
+    "static/js/2.29e45c5d.chunk.js",
+    "static/css/main.9fd37a0c.chunk.css",
+    "static/js/main.ee9fb52e.chunk.js"
+  ]
+}
