@@ -86,4 +86,4 @@ Users should be able to:
 
 - Linkedin- [Gabriel Pinheiro](https://www.linkedin.com/feed/)
 - Frontend Mentor - [@GabrielFMPinheiro](https://www.frontendmentor.io/profile/GabrielFMPinheiro)
-- Codewars - [@GabrielFMPinheiroe](https://www.codewars.com/users/GabrielFMPinheiro)
+- Codewars - [@GabrielFMPinheiro](https://www.codewars.com/users/GabrielFMPinheiro)
