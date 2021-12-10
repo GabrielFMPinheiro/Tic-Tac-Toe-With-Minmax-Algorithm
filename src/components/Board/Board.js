@@ -254,7 +254,7 @@ class Board extends binder(React.Component) {
       return <>{this.initialScreen()}</>;
     } else if (winner !== null) {
       return (
-        <section>
+        <section className="result-container">
           <h1 className="result-title">{this.finalGame(winner)}</h1>
           <Button event={this.resetGame} value={'RESTART'} name={'reset-btn'} />
         </section>
