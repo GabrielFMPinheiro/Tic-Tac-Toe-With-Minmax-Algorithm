@@ -28,4 +28,8 @@ button:hover {
     margin-top: 20px;
     width: 120px;
   }
+
+  button:hover {
+    font-size: 12px;
+  }
 }
