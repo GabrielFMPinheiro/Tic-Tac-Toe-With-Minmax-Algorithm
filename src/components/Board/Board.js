@@ -161,7 +161,7 @@ class Board extends binder(React.Component) {
       element.classList.remove('active');
     }
     target.classList.toggle('active');
-    this.setState({ player: target.innerHTML === 'X' ? 1 : 2 });
+    this.setState({ player: target.innerHTML === 'PC' ? 1 : 2 });
   }
 
   game(board) {
@@ -187,21 +187,10 @@ class Board extends binder(React.Component) {
   }
 
   initialScreen() {
+    const { isComputerPlaying } = this.state;
+
     return (
       <section className="btn-container">
-        <h3>First Player</h3>
-        <div>
-          <Button
-            event={this.selectPlayer}
-            value={'X'}
-            name={'player first-player-btn'}
-          />
-          <Button
-            event={this.selectPlayer}
-            value={'O'}
-            name={'player second-player-btn'}
-          />
-        </div>
         <h3>Mode</h3>
         <div>
           <Button
@@ -215,7 +204,7 @@ class Board extends binder(React.Component) {
           />
           <Button
             event={({ target }) => {
-              this.setState({ isComputerPlaying: false });
+              this.setState({ isComputerPlaying: false, player: 1 });
               this.checkBtnsClicked();
               target.classList.toggle('active');
             }}
@@ -223,6 +212,23 @@ class Board extends binder(React.Component) {
             name={'game-mode-btn'}
           />
         </div>
+
+        <h3>First Player</h3>
+        <div>
+          <Button
+            event={this.selectPlayer}
+            value={'PC'}
+            name={'player first-player-btn'}
+            isActive={!isComputerPlaying}
+          />
+          <Button
+            event={this.selectPlayer}
+            value={'YOU'}
+            name={'player second-player-btn'}
+            isActive={!isComputerPlaying}
+          />
+        </div>
+
         <Button
           event={() =>
             this.setState({ viewInitialScreen: false }, () => {

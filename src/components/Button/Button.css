@@ -6,6 +6,7 @@ button {
   padding: 20px;
   cursor: pointer;
   font-size: 20px;
+  transition: 300ms;
 }
 
 button:hover {
@@ -15,6 +16,17 @@ button:hover {
 .start-btn {
   display: block;
   width: 280px;
+}
+
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: auto;
+}
+
+button[disabled]:hover {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 700px) {
